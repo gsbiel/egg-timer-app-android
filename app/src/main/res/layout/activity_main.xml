@@ -31,6 +31,28 @@
         app:layout_constraintBottom_toTopOf="@+id/progressBarContainer"
         >
 
+        <ImageView
+            android:id="@+id/softEgg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/soft"
+            />
+        <ImageView
+            android:id="@+id/mediumEgg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/medium"
+            />
+        <ImageView
+            android:id="@+id/hardEgg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/hard"
+            />
+
     </LinearLayout>
 
     <LinearLayout
@@ -38,11 +60,22 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/buttonContainer"
         app:layout_constraintBottom_toBottomOf="parent"
         >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5pt"
+            android:layout_marginRight="5pt"
+            android:layout_height="20sp"
+            android:progress="25"
+            />
 
     </LinearLayout>
 
