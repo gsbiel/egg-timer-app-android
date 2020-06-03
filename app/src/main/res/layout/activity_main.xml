@@ -9,6 +9,7 @@
     <fragment
         android:id="@+id/eggTimerFragment"
         tools:layout="@layout/fragment_eggtimer"
+        android:name="com.example.eggtimer.eggtimer.EggTimerFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
